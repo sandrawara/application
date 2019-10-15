@@ -1,0 +1,84 @@
+$bgColor: whitesmoke;
+$bgColorCrs: white;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+
+//Background & Font
+body {
+    background:$bgColor;
+    font: 100% $font-stack;
+    color: $primary-color;
+    
+}
+
+.wrapper {
+margin-right: auto;
+margin-left:  auto; 
+max-width: 960px; 
+padding-right: 10px; 
+padding-left:  10px; 
+
+}
+
+
+#output {
+    display: block;
+    padding: 6px 12px;
+}
+
+fieldset  { border:none;
+
+    input {
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid #2ecc71;
+    }
+   
+} 
+
+#courses {display: block;
+background-color: $bgColorCrs;
+margin-top: 20px;
+padding: 20px;
+border: 1px solid #2ecc71;
+
+    h4 {
+        color: black;
+    }
+
+    a {
+        color: #2ecc71;
+    }
+
+    a:hover {
+        color: black;
+    }
+
+}
+
+@mixin button-bg($bg) {
+    background: $bg;
+    &:hover {
+      background:darken($bg,8%);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background:darken($bg,25%);
+    } 
+  }
+  
+  button {
+   color:white;
+   text-decoration:none;
+   padding:5px 10px;
+   border-radius:3px;
+   margin-left: 10px;
+   font-size:1em;
+   cursor: pointer;
+  }
+  
+button {
+     @include button-bg(#2ecc71);
+  }
+  
