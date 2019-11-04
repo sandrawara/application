@@ -1,5 +1,5 @@
 # Webbapplikation
-<p>Webbapplikationen ska använda Fetch API för att hämta (GET) och skicka data (POST) från och till webbtjänsten. För att göra detta har en Fetch Api skapats som hämtar JSON-filen och skriver ut denna. Länk till färdig plats: http://sandrawara.se/rest/app/
+<p>Webbapplikationen ska använda Fetch API för att hämta (GET), skicka data (POST), uppdatera data (PUT) och radera data (DELETE) från och till webbtjänsten. Anrop görs via denna URI http://sandrawara.se/rest/app/read.php. För att göra detta har en Fetch Api skapats som hämtar JSON-filen och skriver ut denna. Länk till färdig plats: http://sandrawara.se/rest/app/
 En JavaScript-fil använder fetch för att skriva ut JSON till en html-fil, som är stylad med sass och konverterad till css.</p>
 
 ## Följande gulp-paket har används
